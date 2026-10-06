@@ -1,0 +1,7 @@
+{
+  "name": "IMFA — Painel Administrativo de Candidaturas (10.ª Classe)",
+  "description": "Painel Administrativo do Portal de Candidaturas do IMFA (Instituto Médio de Formação Académica / Futuro de Angola) para gestão do processo seletivo da 10.ª Classe (Ano Letivo 2026–2027).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

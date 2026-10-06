@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-error: #ffffff;
+  --color-on-primary-fixed: #410007;
+  --color-primary-fixed-dim: #ffb3b1;
+  --color-background: #f9f9ff;
+  --color-secondary-container: #c7dfff;
+  --color-tertiary: #5a4300;
+  --color-inverse-on-surface: #ecf1ff;
+  --color-surface-container-high: #dee8ff;
+  --color-on-tertiary-fixed: #251a00;
+  --color-on-primary: #ffffff;
+  --color-on-secondary: #ffffff;
+  --color-inverse-surface: #263143;
+  --color-surface-container: #e7eeff;
+  --color-outline: #8e706f;
+  --color-surface: #f9f9ff;
+  --color-tertiary-fixed-dim: #f0c044;
+  --color-surface-tint: #b52332;
+  --color-on-primary-fixed-variant: #92001d;
+  --color-inverse-primary: #ffb3b1;
+  --color-error-container: #ffdad6;
+  --color-surface-variant: #d8e3fb;
+  --color-on-tertiary-container: #ffd368;
+  --color-on-secondary-container: #4b637e;
+  --color-secondary: #49607c;
+  --color-on-tertiary: #ffffff;
+  --color-primary-container: #b52332;
+  --color-surface-dim: #cfdaf2;
+  --color-on-secondary-fixed-variant: #314863;
+  --color-on-background: #111c2d;
+  --color-on-error-container: #93000a;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface-variant: #5a4040;
+  --color-surface-container-highest: #d8e3fb;
+  --color-primary-fixed: #ffdad8;
+  --color-outline-variant: #e2bebd;
+  --color-surface-bright: #f9f9ff;
+  --color-primary: #92001d;
+  --color-on-tertiary-fixed-variant: #5a4300;
+  --color-secondary-fixed: #d1e4ff;
+  --color-tertiary-container: #775a00;
+  --color-on-surface: #111c2d;
+  --color-secondary-fixed-dim: #b0c9e8;
+  --color-surface-container-low: #f0f3ff;
+  --color-tertiary-fixed: #ffdf98;
+  --color-error: #ba1a1a;
+  --color-on-secondary-fixed: #011d35;
+  --color-on-primary-container: #ffcccb;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-margin: 3rem;
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-mobile: 1rem;
+
+  --font-headline-sm: "Space Grotesk", sans-serif;
+  --font-title-md: "Manrope", sans-serif;
+  --font-label-lg: "Space Grotesk", sans-serif;
+  --font-headline-md: "Space Grotesk", sans-serif;
+  --font-body-sm: "Manrope", sans-serif;
+  --font-body-lg: "Manrope", sans-serif;
+  --font-headline-lg: "Space Grotesk", sans-serif;
+  --font-label-md: "Space Grotesk", sans-serif;
+  --font-headline-lg-mobile: "Space Grotesk", sans-serif;
+  --font-display-hero-mobile: "Space Grotesk", sans-serif;
+  --font-label-sm: "Space Grotesk", sans-serif;
+  --font-body-md: "Manrope", sans-serif;
+  --font-display-hero: "Space Grotesk", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --text-headline-sm: 20px;
+  --text-headline-sm--line-height: 28px;
+  --text-headline-sm--font-weight: 600;
+  --text-title-md: 18px;
+  --text-title-md--line-height: 26px;
+  --text-title-md--font-weight: 600;
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 20px;
+  --text-label-lg--letter-spacing: 0.02em;
+  --text-label-lg--font-weight: 600;
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--font-weight: 600;
+  --text-body-sm: 12px;
+  --text-body-sm--line-height: 16px;
+  --text-body-sm--font-weight: 400;
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 24px;
+  --text-body-lg--font-weight: 400;
+  --text-headline-lg: 36px;
+  --text-headline-lg--line-height: 44px;
+  --text-headline-lg--letter-spacing: -0.015em;
+  --text-headline-lg--font-weight: 700;
+  --text-label-md: 12px;
+  --text-label-md--line-height: 16px;
+  --text-label-md--letter-spacing: 0.04em;
+  --text-label-md--font-weight: 600;
+  --text-label-sm: 10px;
+  --text-label-sm--line-height: 14px;
+  --text-label-sm--letter-spacing: 0.06em;
+  --text-label-sm--font-weight: 700;
+  --text-body-md: 14px;
+  --text-body-md--line-height: 20px;
+  --text-body-md--font-weight: 400;
+  --text-display-hero: 48px;
+  --text-display-hero--line-height: 56px;
+  --text-display-hero--letter-spacing: -0.02em;
+  --text-display-hero--font-weight: 700;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-variant-numeric: tabular-nums;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
+.section-pill {
+  background-color: #8F1725;
+  color: #ffffff;
+  border-radius: 9999px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Screen simulation of A4 proportions */
+.a4-sheet {
+  width: 210mm;
+  min-height: 297mm;
+  box-sizing: border-box;
+}
+
+@media (max-width: 860px) {
+  .a4-sheet {
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-shadow-none {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .page-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 12mm 15mm !important;
+    margin: 0 auto !important;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+}
+
+
